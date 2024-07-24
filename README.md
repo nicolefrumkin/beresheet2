@@ -28,14 +28,15 @@ This script reads coordinates from a CSV file and uses them to animate the locat
 
 ### Example CSV File
 
-The CSV file should contain rows of x, y, and z coordinates:
+The CSV file should contain rows of Time, x, y, z, vx, vy, vz, Battery Voltage, and Solar Panel Temp:
 
-```csv
-0.0,0.0,0.0
-1.0,1.0,1.0
-2.0,2.0,2.0
-...
-```
+Time,x (km),y (km),z (km),vx (km/sec),vy (km/sec),vz (km/sec),Battery Voltage,Solar Panel Temp (°C)
+18:40.7,-5251.803201,-4447.783653,-1762.877348,4.61306,-7.824839,-4.473316,32,120
+19:40.0,-4968.360831,-4903.018829,-2024.609689,4.93933,-7.526578,-4.35223,32.341471,120
+20:40.0,-4663.113734,-5345.395983,-2281.883063,5.228901,-7.218743,-4.22259,34.092239,120
+21:40.0,-4341.672489,-5769.244748,-2531.23141,5.47951,-6.909715,-4.088485,33.459715,120
+22:40.0,-4006.300783,-6174.619435,-2772.459059,5.693723,-6.60354,-3.952255,31.025438,120
+23:40.0,-3659.093428,-6561.790691,-3005.498443,5.874558,-6.303395,-3.815833,29.027471,120
 
 ## Script
 
@@ -60,9 +61,9 @@ if obj:
         # Iterate over the rows in the CSV file
         for row in csvreader:
             # Extract the x, y, z coordinates from the row
-            x = float(row[0])
-            y = float(row[1])
-            z = float(row[2])
+            x = float(row[1])
+            y = float(row[2])
+            z = float(row[3])
 
             # Set the object's location
             obj.location = (x, y, z)
@@ -76,10 +77,6 @@ else:
     print("Object 'beresheet2' not found in the scene.")
 ```
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
-For questions or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
+For questions or feedback, please contact [your-email@example.com](mailto:nicolefrumkin@gmail.com).
