@@ -6,6 +6,10 @@ This project contains a Python script for visualizing the Beresheet2 spaceship i
 
 This script reads coordinates from a CSV file and uses them to animate the location of the Beresheet2 spaceship object in Blender. Each row in the CSV file represents a frame in the animation, with the x, y, and z coordinates defining the position of the spaceship.
 
+## Demo
+
+![Beresheet2](path/to/your/final_visualization.gif)
+
 ## Requirements
 
 - Blender with Python scripting enabled
