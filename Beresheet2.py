@@ -16,9 +16,9 @@ if obj:
         # Iterate over the rows in the CSV file
         for row in csvreader:
             # Extract the x, y, z coordinates from the row
-            x = float(row[0])
-            y = float(row[1])
-            z = float(row[2])
+            x = float(row[1])
+            y = float(row[2])
+            z = float(row[3])
 
             # Set the object's location
             obj.location = (x, y, z)
