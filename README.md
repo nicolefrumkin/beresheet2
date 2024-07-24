@@ -8,7 +8,7 @@ This script reads coordinates from a CSV file and uses them to animate the locat
 
 ## Demo
 
-![Beresheet2](path/to/your/final_visualization.gif)
+![Beresheet2](final_visualization.gif)
 
 ## Requirements
 
