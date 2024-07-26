@@ -79,4 +79,4 @@ else:
 
 ## Contact
 
-For questions or feedback, please contact [your-email@example.com](mailto:nicolefrumkin@gmail.com).
+For questions or feedback, please contact [nicolefrumkin@gmail..com](mailto:nicolefrumkin@gmail.com).
